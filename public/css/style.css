@@ -63,6 +63,9 @@
     text-align: center;
 }
 
+#who-tag {
+    min-height: 55px;
+}
 #who-is-coming {
     color:white;
     font-size: 3em;
