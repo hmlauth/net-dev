@@ -3,16 +3,20 @@
     <thead>
         <tr>
             <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Item Bringing</th>
+            <th scope="col">Bringing</th>
+            <th scope="col">Hobbies</th>
+            <th scope="col">Childhood Game</th>
+            <th scope="col">Transplant/Native</th>
         </tr>
     </thead>
     <tbody>
         {{#each attendee}}
         <tr>
-            <td>{{dataValues.firstName}}</td>
-            <td>{{dataValues.lastName}}</td>
+            <td>{{dataValues.firstName}} {{dataValues.lastName}}</td>
             <td>{{dataValues.item}}</td>
+            <td>{{dataValues.funQuestion}}</td>
+            <td>{{dataValues.childhoodQuestion}}</td>
+            <td>{{dataValues.originQuestion}}</td>
         </tr>
         {{/each}}
     </tbody>

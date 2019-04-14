@@ -1,21 +1,28 @@
 $('#submit').on('click', function(){
 
-    event.preventDefault()
+    event.preventDefault();
     
     var firstName = $('#first-name').val().trim();
     var lastName = $('#last-name').val().trim();
     var item = $('#item').val().trim();
+    var funQuestion = $("#fun-question").val().trim();
+    var childhoodQuestion = $("#childhood-question").val().trim();
+    var originQuestion = $(".origin-question").val().trim();
+    
+    myFunction();
 
-    if(firstName !== "" && lastName !== "" && item !== ""){
-        myFunction();
+    if(firstName !== "" && lastName !== "" && item !== "" && funQuestion !== "" && childhoodQuestion !== "" && originQuestion !== ""){
         $.post('/api/newAttendee', {
             firstName: firstName,
             lastName: lastName,
-            item: item
+            item: item,
+            funQuestion: funQuestion,
+            childhoodQuestion: childhoodQuestion,
+            originQuestion: originQuestion
         }).then(function(response){
             console.log(response)
         });
-
+        
         setTimeout(function(){window.location = '/'}, 500);
         
     } else {

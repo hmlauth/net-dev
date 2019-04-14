@@ -35,13 +35,19 @@
     color: #17a2b8;
 }
 
+#address-link {
+    text-align: center;
+    color: black;
+}
+
 #address-link:hover {
-    color: maroon;
+    color: grey
 }
 
 
 #information-background {
     background-color: rgba(250,250,250,0.5);
+    padding-bottom: 1em;
 }
 
 #nav {

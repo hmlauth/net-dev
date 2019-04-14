@@ -28,7 +28,7 @@
             </ul>
         </div>
     </nav>
-    <img src='./images/matrix.gif') id='matrix'>
+    <img src='./images/matrix.gif' ) id='matrix'>
     <div id="carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -47,10 +47,14 @@
             <p class='event-header'>Hanna's Web Development Networking Event</p>
             <p class='event-details'>Come join us for an afternoon of coding discussion and mutual anxiety relief.</p>
             <p class='event-details'>Saturday, April 20th 3pm-7pm</p>
-            <a href="https://www.google.com/maps/dir/UCLA+Extension+Gayley+Center,+Gayley+Avenue,+Los+Angeles,+CA/745+18th+St,+Santa+Monica,+CA+90402/@34.0423278,-118.4816989,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x80c2bc823d1c6fd5:0xf1d173f312b5d1b!2m2!1d-118.4463684!2d34.0595924!1m5!1m1!1s0x80c2a4b21b05559b:0x3067a87b3a1e672!2m2!1d-118.4915555!2d34.0356565!3e0" target="_blank"><p class='event-details' id="address-link">745 18th Street, Santa Monica</p></a>
+            <p class='event-details'>745 18th Street, Santa Monica</p>
+            <a href="https://www.google.com/maps/dir/UCLA+Extension+Gayley+Center,+Gayley+Avenue,+Los+Angeles,+CA/745+18th+St,+Santa+Monica,+CA+90402/@34.0423278,-118.4816989,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x80c2bc823d1c6fd5:0xf1d173f312b5d1b!2m2!1d-118.4463684!2d34.0595924!1m5!1m1!1s0x80c2a4b21b05559b:0x3067a87b3a1e672!2m2!1d-118.4915555!2d34.0356565!3e0"
+                target="_blank">
+                <p id="address-link">Get Directions</p>
+            </a>
         </div>
     </div>
-        <div id='sign-up-field'>
+    <div id='sign-up-field'>
         <h1>Sign up</h1>
         <form>
             <div class="form-group">
@@ -62,6 +66,23 @@
             <div class="form-group">
                 <input type="text" class="form-control" id="item" placeholder="What food/drink will you bring?">
             </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="fun-question" placeholder="Fave hobbies?">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="childhood-question" placeholder="Favorite game as a child?">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">Transplant/Native?</span>
+                </div>
+                <select class="form-control origin-question" id="exampleFormControlSelect1">
+                    <option></option>
+                    <option>Native</option>
+                    <option>Transplant</option>
+                </select>
+            </div>
+
             <button type="submit" id='submit' class="btn btn-info">Sign up!</button>
             <!-- The actual snackbar -->
             <div id="snackbar">Thank you!</div>
@@ -70,10 +91,11 @@
     </div>
 
     <div id="who-tag"></div>
-        {{{body}}}
-    
 
-    <p class='bg-info' id="footer">Questions? Reach out to Hanna on <i class="fa fa-slack" style="font-size:15px"></i>Slack Channel: #networking420</p>
+    {{{body}}}
+
+    <p class='bg-info' id="footer">Questions? Reach out to Hanna on <i class="fa fa-slack" style="font-size:15px"></i><strong>Slack</strong>
+        Channel: #netdev420</p>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
