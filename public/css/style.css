@@ -160,3 +160,36 @@
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
   }
+
+  @media (max-width:800px) {
+    #carousel {
+        display:none !important;
+    }
+
+    #matrix {
+        display: none !important;
+    }
+
+    body {
+        background: url("../images/Sz-FrontHouse.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #information-background {
+        background-color: rgba(250,250,250,0.8);
+    }
+
+    #sign-up-field {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #sign-up-field h1 {
+        background-color:  rgba(250,250,250,0.8);
+    }
+}
