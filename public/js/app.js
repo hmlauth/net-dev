@@ -29,12 +29,13 @@ $('#submit').on('click', function(){
         $('#error-message').show()
     }    
 })
-function initMap() {
+window.initMap = function() {
     var hannah = {lat: 34.0356154, lng: -118.4916475};
     var map = new google.maps.Map(
         document.getElementById('map'), {zoom: 15, center: hannah});
     var marker = new google.maps.Marker({position: hannah, map: map});
 }
+
  // SNACKBAR
  function myFunction() {
     // Get the snackbar DIV
