@@ -19,7 +19,7 @@ module.exports = function(app) {
     app.get('/', function(req, res) {
         db.Attendee.findAll().then(function(response){
             console.log("response", response)
-            res.render('home', {attendee: response})
+            res.render('home', {attendee: response, GOOGLE_API_KEY: process.env.GOOGLE_API_KEY})
         })
     });
     
